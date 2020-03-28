@@ -1,5 +1,6 @@
 package com.cis.lifecycle
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.snackbar.Snackbar
@@ -10,6 +11,7 @@ import android.view.View
 import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main2.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,9 +22,9 @@ class MainActivity : AppCompatActivity() {
 
         Log.i( "onCreate",  "Activity created")
 
-        button1.setOnClickListener { View!
-            //Toast.makeText(this,"button clicked",
-                //Toast.LENGTH_SHORT).show()
+        button.setOnClickListener {
+            Toast.makeText(this,"button clicked",
+                Toast.LENGTH_SHORT).show()
             var i = Intent(this,Main2Activity::class.java)
             startActivity(i)
         }

@@ -1,52 +1,42 @@
 # รายงานผลการทดลอง
 
-Nobody but you <ชื่อ-นามสกุล> <รหัสนักศึกษา>
+<ณัฐนนท์ ทาไธสง> <รหัสนักศึกษา>
 
 ## คำสั่งการแสดงผลผ่าน Logcat
 
 Debug log
 
-```kotlin
-//Add your code here
-```
+Log.debug("This is a debug message")
 
 Error log
 
-```kotlin
-//Add your code here
-```
+Log.error("This is an error message with an additional Exception for output", "AndACustomTag", exception )
 
 Info log
 
-```kotlin
-//Add your code here
-```
+Log.info("This message will not be shown")
 
 Verbose log
-
-```kotlin
-//Add your code here
-```
+Log.v("tag", "This is an info message") 
 
 Warning log
 
-```kotlin
-//Add your code here
-```
+Log.warn("This is a warning message","WithACustomTag")
 
 ## SNACKBAR และ TOST
 
 คำสั่งแสดง Snackbar
 
-```kotlin
-//Add your code here
-```
+fab.setOnClickListener { view ->
+            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
+        }
 
 คำสั่งแสดง Tost
-
-```kotlin
-//Add your code here
-```
+Toast.makeText(this,"button clicked",
+                Toast.LENGTH_SHORT).show()
+            var i = Intent(this,Main2Activity::class.java)
+            startActivity(i)
 
 ## Android LiveCycle Activity
 
